@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4cc1d373f1.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    
+    <main class="main">
+        <section class="section">
+            <!-- LOGO -->
+            <a href="https://www.aluracursos.com/" target="_blank">
+                <img src="src/Logo.png" alt="logo-alura">
+            </a>
+
+            <div class="container">
+                <!-- CAJA SCRIPT -->
+                <div class="container-encript">
+                    <textarea class="caja-texto" name="text" id="text" placeholder="Ingrese el texto aqui" ></textarea>
+                    <p>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        Solo letras minusculas y sin acento
+                    </p>
+                    <div class="btn-content">
+                        <button class="btn btn-encript" id="btn-encript" type="buton" onclick="encriptar()">Encriptar</button>
+                        <button class="btn btn-descript" id="btn-descript" type="buton" onclick="desencriptar()" disabled>Descriptar</button>
+                    </div>
+                </div>
+                <!-- CAJA DESCRIPT -->
+                <div class="container-desencript">
+                    <input class="caja-texto-descriptado" type="text" name="descriptado" id="descriptado" disabled>
+                         <div class="caja-texto-imagen">
+                            <img class="imagen" src="src/Muñeco.png" alt="">
+                            <p>Ingrese el texto que desees encriptar o <br>desencriptar</p>
+                        </div>
+                    </input>
+                    <div class="btn-content"><button class="btn btn-copiar" id="btn-copiar">Copiar</button></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
