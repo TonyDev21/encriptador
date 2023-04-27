@@ -14,7 +14,7 @@ function encriptar(){
     
     if (textoValor == "") { 
   
-        swal("Ingrese una palabra para encriptar");
+        swal("Ingrese una palabra para encriptar.");
     
     } else {
         let txtCifrado = textoValor.replace(/e/g, "enter")
