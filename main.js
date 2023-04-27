@@ -14,7 +14,7 @@ function encriptar(){
     
     if (textoValor == "") { 
   
-        alert("Ingrese una palabra para encriptar");
+        swal("Ingrese una palabra para encriptar");
     
     } else {
         let txtCifrado = textoValor.replace(/e/g, "enter")
@@ -44,7 +44,7 @@ function desencriptar(){
     const descriptadoValor = descriptado.value
     
     if(descriptadoValor == ""){
-        alert("No hay ningun mensaje por decifrar"); 
+        swal("No hay ningun mensaje por decifrar"); 
 
     }else{
         
